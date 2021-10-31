@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.chatBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: #e5e5e5;
+  width: 100%;
+  height: 100vh;
+}
+.chatBody-inner {
+  background: linear-gradient(to right, #f88a31, #ff7606);
+  border-radius: 20px;
+  width: 420px;
+  height: 85vh;
+  position: relative;
+  box-shadow: 2px 6px 20px rgb(105, 105, 105);
+  z-index: 10;
+}
+.chatBody-inner-lower {
+  background-color: #fcfcfc;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45vh;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: -1;
+}
+.chatBody-inner-text {
+  padding: 25px 50px;
+  color: white;
+  letter-spacing: 1.5px;
+}
+.chatBody-inner-text h2 {
+  font-weight: 400;
+}
+.chatBody-inner-top {
+  width: 92%;
+  height: 65%;
+  margin: 30px auto;
+  background-color: #ffffff;
+  z-index: 100;
+  box-shadow: 0px 0px 5px rgb(179, 179, 179);
+  border-radius: 10px;
+}
+
+.chatbot-emoji {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  background-color: #ff6500;
+  border-radius: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  box-shadow: 0px 0px 10px rgba(97, 97, 97, 0.418);
+}
+
+.chatbot-emoji img {
+  width: 70%;
+  margin: auto;
+  transform: translate(20%, 35%);
+}
+
+.chatBody-inner-top-text {
+  padding: 50px 35px;
+}
+.chatBody-inner-top-text h4 {
+  font-weight: 500;
+  display: inline-block;
+  transform: translateY(-30%);
+}
+
+.chatBody-inner-top-text .mark {
+  width: 30px;
+}
+
+.scard:nth-of-type(1) {
+  margin-top: 15px !important;
+}
+
+.scard {
+  box-shadow: 0px 0px 2px rgba(97, 97, 97, 0.418);
+  padding: 11px 10px 13px 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.scard p {
+  font-size: 11px;
+  display: inline;
+}
+
+.scard img {
+  width: 20px;
+  transform: translateY(20%);
+}
+
+.scard-end {
+  box-shadow: 2px 5px 10px rgba(83, 83, 83, 0.418);
+  padding: 10px 10px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.scard-end p {
+  font-size: 14px;
+  display: inline;
+}
+
+.scard-end img {
+  width: 20px;
+  transform: translateY(20%);
+}
+
+.floting-button {
+  background-color: #ff6d00;
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.floting-button img {
+  width: 70%;
+  transform: translate(20%, 35%);
+}
+
+.dispnone {
+  display: none;
+}
+
+/* Animations */
+.cssanimation1 {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+.cssanimation2 {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+}
+.cssanimation3 {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-delay: 2s;
+}
+.cssanimation4 {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-delay: 3s;
+}
+.cssanimation5 {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-delay: 4s;
+}
+.cssanimation6 {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-delay: 5s;
+}
+
+.fadeInBottom {
+  animation-name: fadeInBottom;
+}
+@keyframes fadeInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+  .chatBody-inner {
+    border-radius: 0;
+    width: 100%;
+    height: 100vh;
+  }
+  .chatBody-inner-text {
+    padding: 25px 50px;
+  }
+  .chatBody-inner-lower {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .floting-button {
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000;
+    width: 60px;
+    height: 60px;
+  }
+  .scard-end {
+    margin-top: 20px;
+  }
+  .scard-end p {
+    font-size: 10px;
+  }
+} ;

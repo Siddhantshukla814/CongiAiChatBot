@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Chat Bot</title>
+  </head>
+
+  <body>
+    <div class="chatBody">
+      <div class="chatBody-inner">
+        <div class="chatBody-inner-text">
+          <h1>IRIS</h1>
+          <h2>Hello 👋🏻</h2>
+          <p>I am Iris, a Virtual Assistant<br />How may I help you?</p>
+        </div>
+        <div class="chatBody-inner-top">
+          <div class="chatbot-emoji cssanimation1 fadeInBottom">
+            <img src="/images/emoji.png" />
+          </div>
+          <div class="chatBody-inner-top-text">
+            <h4 class="cssanimation1 fadeInBottom">
+              Frequently Asked Questions
+            </h4>
+            <img
+              class="mark cssanimation1 fadeInBottom"
+              src="/images/mark.png"
+            />
+            <div class="scard cssanimation2 fadeInBottom">
+              <img src="/images/dot.png" />
+              <p>Can I redeem my FB before the original term?</p>
+            </div>
+            <div class="scard cssanimation3 fadeInBottom">
+              <img src="/images/dot.png" />
+              <p>How do I pay my Credit card bill?</p>
+            </div>
+            <div class="scard cssanimation4 fadeInBottom">
+              <img src="/images/dot.png" />
+              <p>How can I get my Account Statement?</p>
+            </div>
+            <div class="scard cssanimation5 fadeInBottom">
+              <img src="/images/dot.png" />
+              <p>What is the tenure of Fixed Deposit?</p>
+            </div>
+            <div class="scard-end cssanimation6 fadeInBottom">
+              <img src="/images/msg.png" />
+              <p>Start a New Conversation</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="chatBody-inner-lower"></div>
+      </div>
+    </div>
+    <div class="floting-button">
+      <img src="/images/emoji.png" />
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(".chatBody-inner").fadeOut(1);
+      $(document).ready(function () {
+        $(".floting-button").click(() => {
+          $(".chatBody-inner").fadeToggle();
+        });
+      });
+    </script>
+  </body>
+</html>
